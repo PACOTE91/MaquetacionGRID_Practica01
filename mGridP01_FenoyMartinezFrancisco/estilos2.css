@@ -1,0 +1,213 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: rgba(6, 70, 53, 1);
+	font-family: "Bakbak One", cursive;
+}
+
+h3 {
+	font-size: 3.5vw;
+	font-weight: 800;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+a:hover {
+	transform: scale(1.08);
+}
+
+header {
+	box-shadow: 5px 5px 10px #d18d8d;
+}
+
+
+
+/* 
+*************************
+		 GRID
+*************************
+ */
+
+.contenedor-grid {
+	display: grid;
+	/* Aplicamos un 10% a la columna que contiene el aside */
+	grid-template-columns: 10% auto auto auto;
+	grid-template-areas:
+		"header header header header"
+		"aside main main main"
+		"aside main main main"
+		"aside main main main"
+		"footer footer footer footer";
+	/* margin: 0 5%; */
+}
+
+.contenedor-grid2 {
+	display: grid;
+	grid-template-columns: repeat(3,33%);
+	grid-template-rows: auto auto auto;
+	grid-template-areas:
+		"imagen1 imagen1 imagen1"
+		"imagen1 imagen1 imagen1"
+		"imagen2 imagen2 imagen2"
+	
+	/* margin: 0 5%; */
+}
+
+.contenedor-grid3 {
+	display: grid;
+	grid-template-columns: auto auto auto;
+		grid-template-rows: auto;
+
+	grid-template-areas:
+		"section_footer1 section_footer2 section_footer3"
+		
+	
+}
+
+.main {
+	grid-area: main;
+}
+
+.aside {
+	grid-area: aside;
+}
+.header {
+	grid-area: header;
+	margin-bottom: 2%;
+}
+.footer {
+	grid-area: footer;
+}
+
+.imagen1 {
+	grid-area: imagen1;
+}
+
+.imagen2 {
+	grid-area: imagen2;
+}
+
+.section_footer1{
+	grid-area: section_footer1;
+
+}
+
+.section_footer2{
+	grid-area: section_footer2;
+
+}
+
+.section_footer3{
+	grid-area: section_footer3;
+
+}
+
+
+/* 
+*************************
+		FIN GRID
+*************************
+ */
+
+
+
+main,
+section {
+	width: 100%;
+}
+
+.margin {
+	margin-top: 8%;
+}
+
+aside {
+	background-color: #f0bb62;
+	border-radius: 6px;
+	font-size: 0.8vw;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+aside > ul > li {
+	margin-top: 7%;
+	margin-left: 10%;
+}
+
+aside > ul > li > a {
+	color: black;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+section > figure > img {
+	width: 100%;
+	border-radius: 6%;
+	max-width: 400px;
+	min-width: 90px;
+	max-height: 150px;
+	min-height: 80px;
+}
+
+section > figure > figcaption {
+	background-color: rgba(255, 255, 255, 0.1);
+	padding: 3%;
+	font-size: 110%;
+	border-radius: 2%;
+	text-transform: uppercase;
+}
+
+figure > p {
+	color: white;
+	font-weight: 100;
+	font-size: 1vw;
+}
+
+/* 
+***********************
+ INICIO DISEÑO FOOTER
+**********************
+ */
+
+footer {
+	background-color: rgba(244, 238, 169, 0.85);
+
+	text-align: center;
+	font-size: 1vw;
+	font-family: "Anton", sans-serif;
+
+	/* Con esto centramos todo el 
+	contenido para todo el espacio del footer */
+	padding: 2%;
+	
+}
+
+/* Para mostrar en linea las imagenes de redes sociales */
+footer > div>div> ul > li {
+	display: inline;
+}
+
+footer > div>div> ul > li > a > img {
+	width: 30px;
+	height: 30px;
+	min-width: 25px;
+	max-width: 25px;
+	margin: 0.5vw;
+	padding: 0.2vw;
+}
+
+footer > address > p {
+	color: black;
+	font-weight: 700;
+}
+
+/* display:grid;
+grid:column:1/5;
+grid-row:4/5
+grid-template-colums:30% 40% 50%;
+grid-template-areas:
+	"footer1 footer2 footer2"
+*/
