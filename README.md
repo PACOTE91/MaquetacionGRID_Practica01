@@ -31,5 +31,7 @@ Primera versión del proyecto.
 ## Recursos adicionales
 
 [CSS TRICKS](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
 [DEVELOPER MOZILLA](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout)
+
 [ENLACE AL PROYECTO](https://github.com/PACOTE91/MaquetacionGRID_Practica01)
